@@ -1,0 +1,82 @@
+loadingIndicator.png
+size: 374,34
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+loading0000
+  rotate: false
+  xy: 0,0
+  size: 34,34
+  orig: 0,0
+  offset: 0, 0
+  index: -1
+loading0001
+  rotate: false
+  xy: 34,0
+  size: 34,34
+  orig: 0,0
+  offset: 0, 0
+  index: -1
+loading0002
+    rotate: false
+    xy: 68,0
+    size: 34,34
+    orig: 0,0
+    offset: 0, 0
+    index: -1
+loading0003
+    rotate: false
+    xy: 102,0
+    size: 34,34
+    orig: 0,0
+    offset: 0, 0
+    index: -1
+loading0004
+  rotate: false
+  xy: 136,0
+  size: 34,34
+  orig: 0,0
+  offset: 0, 0
+  index: -1
+loading0005
+  rotate: false
+  xy: 170,0
+  size: 34,34
+  orig: 0,0
+  offset: 0, 0
+  index: -1
+loading0006
+    rotate: false
+    xy: 204,0
+    size: 34,34
+    orig: 0,0
+    offset: 0, 0
+    index: -1
+loading0007
+    rotate: false
+    xy: 238,0
+    size: 34,34
+    orig: 0,0
+    offset: 0, 0
+    index: -1
+loading0008
+  rotate: false
+  xy: 272,0
+  size: 34,34
+  orig: 0,0
+  offset: 0, 0
+  index: -1
+loading0009
+    rotate: false
+    xy: 306,0
+    size: 34,34
+    orig: 0,0
+    offset: 0, 0
+    index: -1
+loading0010
+  rotate: false
+  xy: 340,0
+  size: 34,34
+  orig: 0,0
+  offset: 0, 0
+  index: -1

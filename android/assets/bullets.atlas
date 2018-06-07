@@ -1,0 +1,110 @@
+explosions.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+bullet_2_blue
+  rotate: false
+  xy: 210, 566
+  size: 10, 26
+  orig: 10, 26
+  offset: 0, 0
+  index: -1
+bullet_2_orange
+  rotate: false
+  xy: 198, 566
+  size: 10, 26
+  orig: 10, 26
+  offset: 0, 0
+  index: -1
+bullet_2_purple
+  rotate: false
+  xy: 222, 566
+  size: 10, 26
+  orig: 10, 26
+  offset: 0, 0
+  index: -1
+bullet_blue0000
+  rotate: false
+  xy: 304, 580
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_blue0001
+  rotate: false
+  xy: 304, 566
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_blue0002
+  rotate: false
+  xy: 290, 580
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_blue0003
+  rotate: false
+  xy: 290, 566
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_orange0000
+  rotate: false
+  xy: 276, 580
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_orange0001
+  rotate: false
+  xy: 276, 566
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_orange0002
+  rotate: false
+  xy: 262, 580
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_orange0003
+  rotate: false
+  xy: 262, 566
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_purple0000
+  rotate: false
+  xy: 248, 580
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_purple0001
+  rotate: false
+  xy: 248, 566
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_purple0002
+  rotate: false
+  xy: 234, 580
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
+bullet_purple0003
+  rotate: false
+  xy: 234, 566
+  size: 12, 12
+  orig: 12, 12
+  offset: 0, 0
+  index: -1
