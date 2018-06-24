@@ -367,6 +367,7 @@ public class GameScreen extends InputAdapter implements Screen {
     }
 
     private void doShoot() {
+        Gdx.app.debug(Constants.LOG_TAG, "Doing shot");
         Body bullet = WorldUtils.createBullet(world, false);
         Sprite sprite = ((PlaneData)plane.getUserData()).getSprite();
         float originOffset = ((PlaneData)plane.getUserData()).getSpriteOffset().x / WorldUtils.TO_WORLD_WIDTH / sprite.getWidth();
@@ -422,16 +423,20 @@ public class GameScreen extends InputAdapter implements Screen {
     private void applyEvent(GameEvent gameEvent) {
         //todo visitor pattern
         if (gameEvent instanceof StatusEvent) {
+            Gdx.app.debug(Constants.LOG_TAG, "New status event");
             enemyPlane.setTransform(((StatusEvent) gameEvent).getPosition(), ((StatusEvent) gameEvent).getAngle());
             enemyPlane.setLinearVelocity(((StatusEvent) gameEvent).getVelocity());
         } else if (gameEvent instanceof RotateEvent) {
+            Gdx.app.debug(Constants.LOG_TAG, "New rotate event");
             enemyPlane.setAngularVelocity(((RotateEvent) gameEvent).getAngularVelocity());
         } else if (gameEvent instanceof ShootEvent) {
+            Gdx.app.debug(Constants.LOG_TAG, "New shoot event");
             Body bullet = WorldUtils.createBullet(world, true);
             bullet.setTransform(((ShootEvent) gameEvent).getPosition(), 0f);
             bullet.setLinearVelocity(((ShootEvent) gameEvent).getVelocity());
             bulletMap.put(System.nanoTime(), bullet);
         } else if (gameEvent instanceof HitEvent) {
+            Gdx.app.debug(Constants.LOG_TAG, "New hit event");
             int hits = ++((PlaneData)plane.getUserData()).numOfHits;
             counter.incrementEnemy();
             if (hits >= 3) {
@@ -440,8 +445,10 @@ public class GameScreen extends InputAdapter implements Screen {
                 ((PlaneData) plane.getUserData()).setExploding(true);
             }
         } else if (gameEvent instanceof AccelEvent) {
+            Gdx.app.debug(Constants.LOG_TAG, "New accel event");
             ((PlaneData)enemyPlane.getUserData()).acceleration = ((AccelEvent) gameEvent).getAcceleration();
         } else if (gameEvent instanceof ExitEvent) {
+            Gdx.app.debug(Constants.LOG_TAG, "New exit event");
             opponentDisconnected = true;
             session.cancel();
             swapInputProcessor();
